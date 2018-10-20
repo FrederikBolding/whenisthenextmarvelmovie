@@ -15,14 +15,26 @@ var tmdb = new tmdbclient(process.env.API_KEY);
 
 var nextMovies = [299537, 299534, 429617]
 
+var cachedMovie;
+var cachedTime;
+
+const oneDay = 60 * 60 * 24 * 1000;
+
 app.get("/api/nextmovie", (req, res) => {
-  getNextMovie(0);
+  if (cachedMovie && (new Date() - cachedTime) < oneDay) {
+    res.json(cachedMovie);
+    return;
+  } else {
+    getNextMovie(0);
+  }
 
   function getNextMovie(index) {
     tmdb.call("/movie/" + nextMovies[index], {})
       .then(function (movie) {
         var date = new Date(movie.release_date);
         if (date > new Date()) {
+          cachedMovie = movie;
+          cachedTime = new Date();
           res.json(movie);
           return;
         } else if (index < nextMovies.length) {
