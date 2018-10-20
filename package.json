@@ -9,7 +9,8 @@
   "scripts": {
     "start": "concurrently \"npm run server\" \"npm run client\"",
     "server": "node server.js",
-    "client": "node start-client.js"
+    "client": "node start-client.js",
+    "postinstall": "cd client && npm install && npm run build"
   },
   "eslintConfig": {
     "extends": "react-app"
