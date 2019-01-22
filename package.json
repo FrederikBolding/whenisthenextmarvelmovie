@@ -10,12 +10,14 @@
     "start": "concurrently \"npm run server\" \"npm run client\"",
     "server": "node server.js",
     "client": "node start-client.js",
-    "postinstall": "cd client && npm install && npm run build"
+    "postinstall": "cd client && npm install && npm run build",
+    "test": "eslint ."
   },
   "eslintConfig": {
     "extends": "react-app"
   },
   "devDependencies": {
-    "concurrently": "^4.0.1"
+    "concurrently": "^4.0.1",
+    "eslint": "^5.6.1"
   }
 }
