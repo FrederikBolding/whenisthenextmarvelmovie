@@ -6,7 +6,7 @@ function Page(props) {
   if (props.state !== null) {
     return (
       <div className="App">
-        <header className="App-header" style={{ backgroundImage: `url(http://image.tmdb.org/t/p/original/${props.state.bg})`, backgroundPosition: "center", }}>
+        <header className="App-header" style={{ backgroundImage: `url(http://image.tmdb.org/t/p/original/${props.state.bg})`, backgroundSize: "cover", }}>
           <h1>{props.state.title}</h1>
           <Countdown date={props.state.date}></Countdown>
         </header>
