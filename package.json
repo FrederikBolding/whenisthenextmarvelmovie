@@ -1,8 +1,8 @@
 {
   "name": "whenisthenextmarvelmovie-server",
   "version": "0.1.0",
-  "engines" : { 
-    "node" : ">=8.0.0"
+  "engines": {
+    "node": ">=8.0.0"
   },
   "private": true,
   "dependencies": {
@@ -21,6 +21,15 @@
   },
   "devDependencies": {
     "concurrently": "^4.0.1",
-    "eslint": "5.6.0"
+    "eslint": "5.6.0",
+    "eslint-plugin-import": "2.15.0",
+    "eslint-plugin-react": "7.12.4",
+    "eslint-config-react-app": "2.0.1",
+    "eslint-config-dev": "2.0.0",
+    "babel-eslint": "10.0.1",
+    "@ljharb/eslint-config": "13.1.1",
+    "eslint-plugin-flowtype": "3.2.1",
+    "eslint-plugin-jsx-a11y": "6.1.2",
+    "pkg-dir": "3.0.0"
   }
 }
