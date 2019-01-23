@@ -1,6 +1,9 @@
 {
   "name": "whenisthenextmarvelmovie-server",
   "version": "0.1.0",
+  "engines" : { 
+    "node" : ">=8.0.0"
+  },
   "private": true,
   "dependencies": {
     "express": "^4.16.4",
