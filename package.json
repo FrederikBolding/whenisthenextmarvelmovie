@@ -17,7 +17,7 @@
     "extends": "react-app"
   },
   "devDependencies": {
-    "babel-eslint": "^10.0.1",
+    "babel-eslint": "^7.2.3",
     "concurrently": "^4.0.1",
     "eslint": "^5.12.1",
     "eslint-config-react-app": "^2.0.1",
