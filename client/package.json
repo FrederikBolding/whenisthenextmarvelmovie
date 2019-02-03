@@ -24,7 +24,6 @@
   ],
   "proxy": "http://localhost:3001/",
   "devDependencies": {
-    "concurrently": "^4.0.1",
-    "terser": "^3.14.1"
+    "concurrently": "^4.0.1"
   }
 }

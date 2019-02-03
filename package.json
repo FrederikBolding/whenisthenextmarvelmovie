@@ -2,7 +2,7 @@
   "name": "whenisthenextmarvelmovie-server",
   "version": "0.1.0",
   "engines": {
-    "node" : "8.12.0"
+    "node": "8.12.0"
   },
   "private": true,
   "dependencies": {
@@ -13,7 +13,7 @@
     "start": "concurrently \"npm run server\" \"npm run client\"",
     "server": "node server.js",
     "client": "node start-client.js",
-    "postinstall": "cd client && npm install && npm run build",
+    "postinstall": "cd client && npm install && npm install terser@3.14.1 && npm run build",
     "test": "eslint ."
   },
   "eslintConfig": {
