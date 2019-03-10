@@ -24,7 +24,7 @@ class Countdown extends Component {
 
   componentDidMount() {
     // update every second
-    this.interval = setInterval(() => {
+    this.interval = setIntervalImmediately(() => {
       const date = this.calculateCountdown(this.props.date);
       date ? this.setState(date) : this.stop();
     }, 1000);
@@ -127,5 +127,10 @@ Countdown.propTypes = {
 Countdown.defaultProps = {
   date: new Date()
 };
+
+function setIntervalImmediately(func, interval) {
+  func();
+  return setInterval(func, interval);
+}
 
 export default Countdown;
