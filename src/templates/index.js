@@ -14,7 +14,7 @@ const IndexPage = ({ pageContext: { nextMovie } }) => (
         <header className="App-header">
           <h1>{nextMovie.title}</h1>
           <Countdown date={nextMovie.release_date}></Countdown>
-          <MadeWithLove by="Frederik Bolding" link="https://frederik.bolding.com" />
+          <MadeWithLove by="Frederik Bolding" link="https://frederikbolding.com" />
         </header>
       </div>
   </Layout>
