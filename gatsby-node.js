@@ -8,9 +8,9 @@
 
 exports.createPages = async ({ actions: { createPage } }) => {
   var tmdbclient = require("themoviedbclient")
-  var tmdb = new tmdbclient(process.env.API_KEY )
+  var tmdb = new tmdbclient(process.env.API_KEY)
 
-  var nextMovies = [299537, 299534, 429617]
+  var nextMovies = [429617, 497698, 453395, 505642, 447365]
 
   var nextMovie = null;
   for (let id of nextMovies){
