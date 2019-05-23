@@ -37,7 +37,7 @@ body {
     color: white;
   }
   
-  .App-header {
+  .App-content {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
