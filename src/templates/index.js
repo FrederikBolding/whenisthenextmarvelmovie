@@ -3,6 +3,7 @@ import React from "react"
 import SEO from "../components/seo"
 import Countdown from '../components/Countdown.js';
 import MadeWithLove from '../components/MadeWithLove.js'
+import GithubCorner from "react-github-corner";
 
 import "../components/index.css"
 
@@ -14,6 +15,7 @@ const IndexPage = ({ pageContext: { nextMovie } }) => (
           <h1>{nextMovie.title}</h1>
           <Countdown date={nextMovie.release_date}></Countdown>
           <MadeWithLove by="Frederik Bolding" link="https://frederikbolding.com" />
+          <GithubCorner href="https://github.com/FrederikBolding/whenisthenextmarvelmovie" />
         </div>
       </div>
   </main>
