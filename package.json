@@ -4,25 +4,25 @@
   "version": "0.1.0",
   "author": "Frederik Bolding",
   "dependencies": {
-    "gatsby": "^2.1.27",
-    "gatsby-background-image": "^0.7.0",
-    "gatsby-image": "^2.0.31",
-    "gatsby-plugin-manifest": "^2.0.22",
-    "gatsby-plugin-offline": "^2.0.24",
-    "gatsby-plugin-react-helmet": "^3.0.8",
-    "gatsby-plugin-remote-images": "^1.0.1",
-    "gatsby-plugin-sharp": "^2.2.1",
-    "gatsby-source-filesystem": "^2.0.23",
-    "gatsby-transformer-sharp": "^2.1.15",
+    "gatsby": "^2.13.32",
+    "gatsby-background-image": "^0.7.6",
+    "gatsby-image": "^2.2.6",
+    "gatsby-plugin-manifest": "^2.2.3",
+    "gatsby-plugin-offline": "^2.2.4",
+    "gatsby-plugin-react-helmet": "^3.1.2",
+    "gatsby-plugin-remote-images": "^1.0.3",
+    "gatsby-plugin-sharp": "^2.2.8",
+    "gatsby-source-filesystem": "^2.1.5",
+    "gatsby-transformer-sharp": "^2.2.4",
     "prop-types": "^15.7.2",
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
     "react-github-corner": "^2.3.0",
-    "react-helmet": "^5.2.0",
+    "react-helmet": "^5.2.1",
     "themoviedbclient": "^0.2.1"
   },
   "devDependencies": {
-    "prettier": "^1.16.4"
+    "prettier": "^1.18.2"
   },
   "keywords": [
     "gatsby"
@@ -34,6 +34,7 @@
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
+    "clean": "rm -rf .cache",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "repository": {
