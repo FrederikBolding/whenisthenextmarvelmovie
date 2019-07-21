@@ -37,18 +37,20 @@ const IndexPage = () => (
     `}
     render={data => {
       let movie = data.allBackgroundImage.edges.filter(x => new Date(x.node.release_date) > new Date())[0].node;
+      let hasImage = movie.localImage !== null;
       return (
-  <main>
-    <SEO title="When is the next Marvel movie?" keywords={[`gatsby`, `application`, `react`, `marvel`, `superheroes`]} />
-    <BackgroundImage className="App" fluid={movie.localImage.childImageSharp.fluid}>
-        <div className="App-content">
-          <h1>{movie.title}</h1>
-          <Countdown date={movie.release_date}></Countdown>
-          <MadeWithLove by="Frederik Bolding" link="https://frederikbolding.com" />
-          <GithubCorner href="https://github.com/FrederikBolding/whenisthenextmarvelmovie" />
-        </div>
-      </BackgroundImage>
-  </main>)}
-} />)
+        <main>
+          <SEO title="When is the next Marvel movie?" keywords={[`gatsby`, `application`, `react`, `marvel`, `superheroes`]} />
+          <BackgroundImage className="App" style={{color: hasImage ? "white": "black"}} fluid={hasImage ? movie.localImage.childImageSharp.fluid : {}}>
+            <div className="App-content">
+              <h1>{movie.title}</h1>
+              <Countdown date={movie.release_date}></Countdown>
+              <MadeWithLove by="Frederik Bolding" link="https://frederikbolding.com" style={{color: hasImage ? "white": "black"}} />
+              <GithubCorner href="https://github.com/FrederikBolding/whenisthenextmarvelmovie" />
+            </div>
+          </BackgroundImage>
+        </main>)
+    }
+    } />)
 
 export default IndexPage
