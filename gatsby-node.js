@@ -12,7 +12,7 @@ exports.sourceNodes = async ({actions, createContentDigest}) => {
   var tmdbclient = require("themoviedbclient")
   var tmdb = new tmdbclient(process.env.API_KEY)
 
-  var nextMovies = [429617, 497698, 453395, 505642, 447365]
+  var nextMovies = [497698, 524434, 566525, 453395, 616037, 505642, 447365]
 
   for (let id of nextMovies) {
     try {
