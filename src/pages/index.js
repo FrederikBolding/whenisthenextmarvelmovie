@@ -41,11 +41,11 @@ const IndexPage = () => (
       return (
         <main>
           <SEO title="When is the next Marvel movie?" keywords={[`gatsby`, `application`, `react`, `marvel`, `superheroes`]} />
-          <BackgroundImage className="App" style={{color: hasImage ? "white": "black"}} fluid={hasImage ? movie.localImage.childImageSharp.fluid : {}}>
+          <BackgroundImage className="App" style={hasImage ? {} : {background: "black"}} fluid={hasImage ? movie.localImage.childImageSharp.fluid : {}}>
             <div className="App-content">
               <h1>{movie.title}</h1>
               <Countdown date={movie.release_date}></Countdown>
-              <MadeWithLove by="Frederik Bolding" link="https://frederikbolding.com" style={{color: hasImage ? "white": "black"}} />
+              <MadeWithLove by="Frederik Bolding" link="https://frederikbolding.com" />
               <GithubCorner href="https://github.com/FrederikBolding/whenisthenextmarvelmovie" />
             </div>
           </BackgroundImage>
