@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "author": "Frederik Bolding",
   "dependencies": {
-    "gatsby": "^2.13.32",
+    "gatsby": "^2.18.7",
     "gatsby-background-image": "^0.7.6",
     "gatsby-image": "^2.2.6",
     "gatsby-plugin-manifest": "^2.2.3",
